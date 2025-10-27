@@ -1,6 +1,7 @@
 *** Settings ***
-Library    BuiltIn
-Library    SeleniumLibrary
+Resource    COMMON.robot
+Test Setup       Open Browser       ${URL}    chrome
+Test Teardown        Close Browser
 
 *** Variables ***
 ${URL}            https://www.saucedemo.com/
@@ -9,7 +10,7 @@ ${PASSWORD}       secret_sauce
 
 *** Test Cases ***
 Login
-    Open Browser       ${URL}    chrome
+
     Input Text         id=user-name    ${USERNAME}
     Input Text         id=password    ${PASSWORD}
     Click Button       id=login-button
