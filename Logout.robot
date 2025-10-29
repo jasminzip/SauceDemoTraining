@@ -3,7 +3,7 @@ Resource    /Users/jasminmusanip/PycharmProjects/SauceDemoTraining/RESOURCES/COM
 
 *** Test Cases ***
 Login and logout
-
+    [Tags]    Valid Login    regression
     Input Text         id=user-name    ${USERNAME}
     Input Text         id=password    ${PASSWORD}
     Click Button       id=login-button
