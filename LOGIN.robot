@@ -1,6 +1,6 @@
 *** Settings ***
 Resource    /Users/jasminmusanip/PycharmProjects/SauceDemoTraining/RESOURCES/COMMON.robot
-Test Setup    Open Browser To Login Page
+Test Setup    Open Browser To Login Sauce Demo
 Test Teardown    Close Browser Session
 
 

@@ -10,7 +10,7 @@ ${USERNAME}   standard_user
 ${PASSWORD}   secret_sauce
 
 *** Keywords ***
-Open Browser To Login Page
+Open Browser To Login Sauce Demo
     Open Browser    ${URL}    ${BROWSER}
     Wait Until Element Is Visible    id=user-name
 
