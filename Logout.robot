@@ -2,8 +2,8 @@
 Resource    /Users/jasminmusanip/PycharmProjects/SauceDemoTraining/RESOURCES/COMMON.robot
 
 *** Test Cases ***
-Login and logout
-    [Tags]    Login and logout    regression
+logout
+    [Tags]    logout    regression
     Input Text         id=user-name    ${USERNAME}
     Input Text         id=password    ${PASSWORD}
     Click Button       id=login-button

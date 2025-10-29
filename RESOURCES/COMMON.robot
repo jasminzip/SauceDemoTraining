@@ -21,9 +21,9 @@ Login With Valid Credentials
     Sleep    5
     Page Should Contain    Products
 
-Login and logout
-    Input Text         id=user-name    ${USERNAME}
-    Input Text         id=password    ${PASSWORD}
+logout
+    #Input Text         id=user-name    ${USERNAME}
+   # Input Text         id=password    ${PASSWORD}
     Click Button       id=login-button
     Sleep    5
     Page Should Contain    Products
