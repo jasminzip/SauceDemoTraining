@@ -1,9 +1,9 @@
 SELECTORS = {
     "input_username": "id:user-name",
     "input_password": "id:password",
-    "button_login": "id:login-button",
-    "button_menu": "id:react-burger-menu-btn",
-    "link_logout": "id:logout_sidebar_link"
+    "click button_login": "id:login-button",
+    "click button_menu": "id:react-burger-menu-btn",
+    "click link_logout": "id:logout_sidebar_link"
 
 
 }

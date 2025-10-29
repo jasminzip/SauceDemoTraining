@@ -1,22 +1,15 @@
 *** Settings ***
-Resource    COMMON.robot
-Test Setup       Open Browser       ${URL}    chrome
-Test Teardown        Close Browser
-
-*** Variables ***
-${URL}            https://www.saucedemo.com/
-${USERNAME}       standard_user
-${PASSWORD}       secret_sauce
+Resource    /Users/jasminmusanip/PycharmProjects/SauceDemoTraining/RESOURCES/COMMON.robot
 
 *** Test Cases ***
-Login
+Login and logout
 
     Input Text         id=user-name    ${USERNAME}
     Input Text         id=password    ${PASSWORD}
     Click Button       id=login-button
     Sleep    5
     Page Should Contain    Products
+    Sleep    5
     Click Element    id=react-burger-menu-btn
-    Sleep    5
     Click Element    id=logout_sidebar_link
-    Sleep    5
+   Sleep    5
