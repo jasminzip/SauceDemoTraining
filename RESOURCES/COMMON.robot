@@ -15,21 +15,13 @@ Open Browser To Login Page
     Wait Until Element Is Visible    id=user-name
 
 Login With Valid Credentials
-
     Input Text         id=user-name    ${USERNAME}
     Input Text         id=password    ${PASSWORD}
     Click Button       id=login-button
     Sleep    5
     Page Should Contain    Products
 
-#Login With Invalid Password
-  #  Input Text    ${username_input}    ${USERNAME}
-   # Input Text    ${password_input}    wrong_password
-   # Click Button  ${login_button}
-   # Wait Until Page Contains Element    ${error_message}
-
 Login and logout
-
     Input Text         id=user-name    ${USERNAME}
     Input Text         id=password    ${PASSWORD}
     Click Button       id=login-button
